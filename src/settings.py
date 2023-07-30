@@ -13,22 +13,22 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "Broken Glass Insulator"
-PROJECT_NAME_FULL: str = "Broken Glass Insulator"
+PROJECT_NAME: str = "VPMBGI"
+PROJECT_NAME_FULL: str = "VPMBGI: Vietnamese Public Merged dataset of Broken Glass Insulator for UAV inspection of power lines"
 
 ##################################
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC_BY_4_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Domain.Industrial()]
-CATEGORY: Category = Category.Construction()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Energy()]
+CATEGORY: Category = Category.EnergyAndUtilities()
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2023-02-14"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
-    RELEASE_YEAR: int = 2023
+    RELEASE_YEAR: int = None
 
 HOMEPAGE_URL: str = "https://github.com/phd-benel/VPMBGI"
 # e.g. "https://some.com/dataset/homepage"
@@ -44,7 +44,7 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/broken-glass-insulator"
 ##################################
 DOWNLOAD_ORIGINAL_URL: Optional[
     Union[str, dict]
-] = "https://github.com/phd-benel/VPMBGI/releases/tag/dataset"
+] = "https://github.com/phd-benel/VPMBGI/releases/download/dataset/iraset.v1i.yolov7pytorch.1.zip"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -53,7 +53,13 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If you have more than the one paper, put the most relatable link as the first element of the list
 PAPER: Optional[Union[str, List[str]]] = None
 CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
+AUTHORS: Optional[List[str]] = [
+    "phd-benel",
+    "hieulc@cpc.vn",
+    "QBPCLuoi110GD1",
+    "DAKNONGPC",
+    "QBPCLuoi110GD3",
+]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
