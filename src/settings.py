@@ -24,7 +24,7 @@ APPLICATIONS: List[Union[Industry, Domain, Research]] = [
     Industry.Energy(),
     Domain.DroneInspection(),
 ]
-CATEGORY: Category = Category.EnergyAndUtilities(extra=Category.Drones())
+CATEGORY: Category = Category.EnergyAndUtilities(extra=Category.Drones(), is_original_dataset=False)
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
