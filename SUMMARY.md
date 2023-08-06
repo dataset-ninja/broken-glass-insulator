@@ -1,4 +1,4 @@
-**VPMBGI: Vietnamese Public Merged dataset of Broken Glass Insulator for UAV inspection of power lines** is a dataset for an object detection task. It is used in the energy industry. 
+**VPMBGI: Vietnamese Public Merged dataset of Broken Glass Insulator for UAV inspection of power lines** is a dataset for an object detection task. It is used in the energy industry, and in the drone inspection domain. 
 
 The dataset consists of 1010 images with 1188 labeled objects belonging to 1 single class (*iso_broken_glass*).
 
