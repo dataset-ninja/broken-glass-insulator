@@ -21,7 +21,7 @@ PROJECT_NAME_FULL: str = "VPMBGI: Vietnamese Public Merged dataset of Broken Gla
 ##################################
 LICENSE: License = License.CC_BY_4_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Energy()]
-CATEGORY: Category = Category.EnergyAndUtilities()
+CATEGORY: Category = Category.EnergyAndUtilities(extra=Category.Drones())
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
