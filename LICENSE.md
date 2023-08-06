@@ -1,1 +1,1 @@
-Broken Glass Insulator is under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.
+VPMBGI: Vietnamese Public Merged dataset of Broken Glass Insulator for UAV inspection of power lines is under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.
